@@ -18,19 +18,26 @@
         <div class="col s4">
           <form id="photo-form">
             <label for="image_url">Image Url</label>
-            <input type='text' name='image_url' />
+            <input id="image-url" type='text' name='image_url' />
             <label for="caption">Caption</label>
-            <input type='text' name='caption' />
+            <input id='image-caption' type='text' name='caption' />
             <input type='submit' />
           </form>
         </div>
 
         <div class='col s8'>
-          <div id='photo-list'></div>
+          <div  class='card'>
+            <div id='photo-list' class="card-image">
+
+            </div>
+          </div>
         </div>
       </div>
 
     </div>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script type="text/javascript" src='src/model/caption.js'></script>
+    <script type="text/javascript" src='src/model/image.js'></script>
     <script type="text/javascript" src='src/index.js'></script>
   </body>
 </html>
